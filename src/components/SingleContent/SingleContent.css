@@ -3,6 +3,7 @@
     flex-direction: column;
     width: 200px;
     padding: 5px;
+    padding-bottom: 15px;
     margin: 5px 0;
     background-color: #282c34;
     border-radius: 10px;
@@ -11,11 +12,13 @@
 }
 
 .media:hover {
-    background-color: rgb(190, 217, 244);
-    color: black;
+    /* background-color: rgb(190, 217, 244); */
+    background: linear-gradient(217deg, rgba(167, 137, 183, 0.8), rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, rgba(92, 178, 218, 0.8), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgba(92, 92, 178, 0.8), rgba(0, 0, 255, 0) 70.71%);
+    /* color: black; */
     transform: scale(1.05);
     transition: all .4s ease;
     -webkit-transition: all .4s ease;
+    cursor: pointer;
 }
 
 @media (max-width: 550px) {

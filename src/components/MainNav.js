@@ -30,6 +30,7 @@ export default function SimpleBottomNavigation() {
           zIndex: 100,
           position: "fixed",
           bottom: 0,
+          // backgroundColor: "transparent",
           backgroundColor: "#2d313a",
         }}
         onChange={(event, newValue) => {
