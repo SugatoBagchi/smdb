@@ -52,7 +52,7 @@ const Search = () => {
         <div className="search" style={{ display: "flex", margin: "15px" }}>
           <TextField
             id="outlined-basic"
-            label="Outlined"
+            label="What do you feel like watching today?"
             variant="outlined"
             className="searchBox"
             style={{ flex: 1 }}
@@ -62,6 +62,7 @@ const Search = () => {
             variant="outlined"
             style={{ marginLeft: 10 }}
             onClick={fetchSearch}
+            
           >
             <SearchOutlinedIcon />
           </Button>

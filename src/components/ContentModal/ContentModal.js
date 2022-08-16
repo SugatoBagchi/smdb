@@ -4,24 +4,27 @@ import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import Fade from "@mui/material/Fade";
 import Button from "@mui/material/Button";
-import Typography from "@mui/material/Typography";
 import axios from "axios";
 import { useState } from "react";
 import YouTubeIcon from "@mui/icons-material/YouTube";
-import './ContentModal.css'
-import ViewCarouselIcon from "@mui/icons-material/ViewCarousel";
+import Carousel from "../Carousel/Carousel";
+import "./ContentModal.css";
 import {
   img_500,
   unavailable,
   unavailableLandscape,
 } from "../../config/config";
 
+
 const style = {
-  width: "90%",
+  width: "80%",
   height: "80%",
+  display:"center",
   backgroundColor: "#39445a",
   borderRadius: 10,
   color: "white",
+  marginTop:"2vw",
+  marginLeft:"8vw",
   border: "1px solid #282c34",
   boxShadow: 5,
   p: 4,
@@ -114,6 +117,7 @@ export default function ContentModal({ children, media_type, id }) {
 
                 <div>
                   {/* <ViewCarouselIcon id={id} media_type={media_type} /> */}
+                  <Carousel id={id} media_type={media_type} />
                 </div>
 
                 <Button
